@@ -68,6 +68,14 @@ The model supplies programmable judgment. Code owns control flow, permissions, c
 - TypeSafe AI / Jev docs — source of truth for API and SDK details  
 - TypeSafe official agent skill — implementation guidance  
 
+### Use case / related
+
+**[jevlike](https://github.com/vinnylarouge/jevlike)** — An independent research starter (MIT) for training small local option-scorers that share the same I/O shape as a Jev-like Choice: context text + a changing list of N text options → one probability per option in one pass (not token-by-token generation).
+
+Not TypeSafe's commercial Jev and not a reverse-engineered copy of TypeSafe's private design. Useful when you want to experiment with or train a small local option-scorer while using `jev-system-architect` for where Choice/Score/Noul boundaries belong in your application.
+
+Includes Doom/chess demos and a Wikispeedia example.
+
 ---
 
 ## License
